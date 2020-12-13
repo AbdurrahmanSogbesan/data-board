@@ -1,0 +1,19 @@
+<template>
+  <div>
+    <svg
+      width="6"
+      height="60"
+      viewBox="0 0 6 60"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect width="6" height="60" rx="3" fill="#15012E" />
+    </svg>
+  </div>
+</template>
+
+<script>
+export default {};
+</script>
+
+<style lang="scss" scoped></style>
