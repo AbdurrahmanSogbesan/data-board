@@ -26,13 +26,11 @@
 <style lang="scss" scoped>
   .sidebar-container {
     background: #cb808d;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: fixed;
+    position: relative;
     top: 0;
     bottom: 0;
     left: 0;
+    height: 100vh;
   }
 
   .sidebar-title {
@@ -55,7 +53,9 @@
     align-items: center;
     display: flex;
     padding-left: 60px;
-    position: relative;
+    position: absolute;
     bottom: 0;
+    left: 0;
+    right: 0;
   }
 </style>
