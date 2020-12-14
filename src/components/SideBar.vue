@@ -31,6 +31,7 @@ export default {
   bottom: 0;
   left: 0;
   height: 100vh;
+  width: 17%;
 }
 
 .sidebar-title {

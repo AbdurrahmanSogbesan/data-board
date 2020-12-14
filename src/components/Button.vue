@@ -41,7 +41,7 @@ export default {
 button {
   border-radius: 4px;
   outline: none;
-  color: #e2e8f0;
+  color: #f7fafc;
   border: none;
 }
 </style>

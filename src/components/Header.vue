@@ -4,7 +4,7 @@
       <span class="header-title">Dashboard Overview</span>
       <TextBox :icon="SearchIcon" placeholder="Search all..." />
     </div>
-    <div class="d-flex align-items-center header-list-items">
+    <div class="d-flex align-items-center">
       <HeaderListItems />
       <Button text="Download Client" />
       <img src="@/assets/images/image.png" alt="" class="image ml-4" />
@@ -44,9 +44,5 @@ export default {
 }
 .image {
   border-radius: 25px;
-}
-.header-list-items {
-  position: absolute;
-  right: 22px;
 }
 </style>
