@@ -1,23 +1,22 @@
 <template>
   <div id="app">
-    <div class="row">
-      <div class="col-2">
-        <SideBar />
-      </div>
-      <div class="col-10"></div>
+    <div class="d-flex">
+      <SideBar />
+      <!-- Replace below div with the header component here -->
+      <div class="app-header"></div>
     </div>
   </div>
 </template>
 
 <script>
-import SideBar from "./components/SideBar.vue";
+  import SideBar from "./components/SideBar.vue";
 
-export default {
-  name: "App",
-  components: {
-    SideBar
-  }
-};
+  export default {
+    name: "App",
+    components: {
+      SideBar,
+    },
+  };
 </script>
 
 <style lang="scss"></style>

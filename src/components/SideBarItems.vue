@@ -9,35 +9,34 @@
 </template>
 
 <script>
-import SideBarItem from "./SideBarItem";
+  import SideBarItem from "./SideBarItem";
 
-export default {
-  data() {
-    return {
-      sideBarItems: [
-        { text: "Dashboard", isActive: true },
-        { text: "User Management", isActive: false },
-        { text: "Documents", isActive: false },
-        { text: "Statistics", isActive: false },
-        { text: "Settings", isActive: false }
-      ]
-    };
-  },
-  components: {
-    SideBarItem
-  },
-  props: {
-    hasline: {
-      type: Boolean,
-      default: false
-    }
-  }
-};
+  export default {
+    data() {
+      return {
+        sideBarItems: [
+          { text: "Dashboard", isActive: true },
+          { text: "User Management", isActive: false },
+          { text: "Documents", isActive: false },
+          { text: "Statistics", isActive: false },
+          { text: "Settings", isActive: false },
+        ],
+      };
+    },
+    components: {
+      SideBarItem,
+    },
+    props: {
+      hasline: {
+        type: Boolean,
+        default: false,
+      },
+    },
+  };
 </script>
 
 <style lang="scss" scoped>
-.sidebar-items {
-  margin-top: 86px;
-  margin-left: 60px;
-}
+  .sidebar-items {
+    margin-top: 73px;
+  }
 </style>
