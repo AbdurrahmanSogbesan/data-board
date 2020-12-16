@@ -18,6 +18,8 @@
           paddingLeft="15px"
           width="178px"
           class="mr-5"
+          :icon="SortIcon"
+          leftPosition="147px"
         />
         <TextBox placeholder="Select list..." :icon="SearchIcon" class="mr-3" />
         <FilterIcon class="mr-3" />
@@ -53,11 +55,13 @@ import FilterIcon from "./FilterIcon.vue";
 import TableRow from "./TableRow.vue";
 import PageNumber from "./PageNumber.vue";
 import Select from "./Select.vue";
+import SortIcon from "./SortIcon.vue";
 
 export default {
   data() {
     return {
       SearchIcon,
+      SortIcon,
       rows: [
         {
           number: "03",

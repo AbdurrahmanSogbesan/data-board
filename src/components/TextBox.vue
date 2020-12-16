@@ -5,7 +5,12 @@
       :placeholder="placeholder"
       :style="{ width: width, 'padding-left': paddingLeft }"
     />
-    <component :is="icon" v-if="icon" class="icon"></component>
+    <component
+      :style="{ left: leftPosition }"
+      :is="icon"
+      v-if="icon"
+      class="icon"
+    ></component>
   </div>
 </template>
 
@@ -21,6 +26,10 @@ export default {
     paddingLeft: {
       type: String,
       default: "40px"
+    },
+    leftPosition: {
+      type: String,
+      default: "15px"
     }
   }
 };
@@ -43,7 +52,6 @@ export default {
 }
 .icon {
   position: absolute;
-  top: 10px;
-  left: 15px;
+  top: 12px;
 }
 </style>
