@@ -2,10 +2,10 @@
   <div>
     <button
       :style="{
-        width: width,
-        height: height,
+        width,
+        height,
         'background-color': backgroundColor,
-        'font-size': fontSize
+        'font-size': fontSize,
       }"
     >
       {{ text }}
@@ -14,34 +14,34 @@
 </template>
 
 <script>
-export default {
-  props: {
-    width: {
-      type: String,
-      default: "101px"
+  export default {
+    props: {
+      width: {
+        type: String,
+        default: "101px",
+      },
+      height: {
+        type: String,
+        default: "30px",
+      },
+      backgroundColor: {
+        type: String,
+        default: "#CB808D",
+      },
+      fontSize: {
+        type: String,
+        default: "12px",
+      },
+      text: String,
     },
-    height: {
-      type: String,
-      default: "30px"
-    },
-    backgroundColor: {
-      type: String,
-      default: "#CB808D"
-    },
-    fontSize: {
-      type: String,
-      default: "12px"
-    },
-    text: String
-  }
-};
+  };
 </script>
 
 <style lang="scss" scoped>
-button {
-  border-radius: 4px;
-  outline: none;
-  color: #e2e8f0;
-  border: none;
-}
+  button {
+    border-radius: 4px;
+    outline: none;
+    color: #f7fafc;
+    border: none;
+  }
 </style>

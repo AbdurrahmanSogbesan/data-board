@@ -16,7 +16,7 @@ export default {
   data() {
     return {
       HeaderListItems: [
-        { text: "Help guide" },
+        { text: "Help guides" },
         { text: "Inbox", icon: InboxIcon }
       ]
     };
