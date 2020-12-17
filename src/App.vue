@@ -1,26 +1,24 @@
 <template>
   <div id="app">
-    <div class="d-flex">
+    <div class="d-flex align-items-start">
       <SideBar />
       <!-- Replace below div with the header component here -->
-      <div class="app-header">
-        <Header />
-      </div>
+      <Header />
     </div>
   </div>
 </template>
 
 <script>
-import SideBar from "./components/SideBar.vue";
-import Header from "./components/Header.vue";
+  import SideBar from "./components/SideBar.vue";
+  import Header from "./components/Header.vue";
 
-export default {
-  name: "App",
-  components: {
-    SideBar,
-    Header
-  }
-};
+  export default {
+    name: "App",
+    components: {
+      SideBar,
+      Header,
+    },
+  };
 </script>
 
 <style lang="scss"></style>

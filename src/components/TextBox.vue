@@ -1,6 +1,10 @@
 <template>
   <div class="textbox">
-    <input type="text" :placeholder="placeholder" :style="{ width: width }" />
+    <input
+      type="text"
+      :placeholder="placeholder"
+      :style="{ width: width, 'padding-left': paddingLeft }"
+    />
     <component :is="icon" v-if="icon" class="icon"></component>
   </div>
 </template>
@@ -13,6 +17,10 @@ export default {
     width: {
       type: String,
       default: "228px"
+    },
+    paddingLeft: {
+      type: String,
+      default: "40px"
     }
   }
 };
@@ -25,7 +33,6 @@ export default {
     border: 1px solid #e2e8f0;
     border-radius: 4px;
     height: 40px;
-    padding-left: 40px;
     outline: none;
 
     &::placeholder {
