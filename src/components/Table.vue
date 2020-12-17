@@ -69,8 +69,6 @@
             serial: "#123-456ABC",
             stock: "123",
             category: "Apple",
-            actions: "Edit",
-            delete: "Delete",
           },
           {
             number: "03",
@@ -78,8 +76,6 @@
             serial: "#123-456ABC",
             stock: "123",
             category: "Apple",
-            actions: "Edit",
-            delete: "Delete",
           },
           {
             number: "03",
@@ -87,8 +83,6 @@
             serial: "#123-456ABC",
             stock: "123",
             category: "Apple",
-            actions: "Edit",
-            delete: "Delete",
           },
           {
             number: "03",
@@ -96,8 +90,6 @@
             serial: "#123-456ABC",
             stock: "123",
             category: "Apple",
-            actions: "Edit",
-            delete: "Delete",
           },
           {
             number: "03",
@@ -105,8 +97,6 @@
             serial: "#123-456ABC",
             stock: "123",
             category: "Apple",
-            actions: "Edit",
-            delete: "Delete",
           },
           {
             number: "03",
@@ -114,8 +104,6 @@
             serial: "#123-456ABC",
             stock: "123",
             category: "Apple",
-            actions: "Edit",
-            delete: "Delete",
           },
           {
             number: "03",
@@ -123,8 +111,6 @@
             serial: "#123-456ABC",
             stock: "123",
             category: "Apple",
-            actions: "Edit",
-            delete: "Delete",
           },
           {
             number: "03",
@@ -132,8 +118,6 @@
             serial: "#123-456ABC",
             stock: "123",
             category: "Apple",
-            actions: "Edit",
-            delete: "Delete",
           },
           {
             number: "03",
@@ -141,8 +125,6 @@
             serial: "#123-456ABC",
             stock: "123",
             category: "Apple",
-            actions: "Edit",
-            delete: "Delete",
           },
           {
             number: "03",
@@ -150,8 +132,6 @@
             serial: "#123-456ABC",
             stock: "123",
             category: "Apple",
-            actions: "Edit",
-            delete: "Delete",
           },
         ],
       };
