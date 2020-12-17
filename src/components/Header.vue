@@ -33,24 +33,9 @@
 </script>
 
 <style lang="scss" scoped>
-<<<<<<< HEAD
-.header-section {
-  padding: 20px 22px;
-  justify-content: space-between;
-}
-.header-title {
-  font-size: 16px;
-  color: #a0aec0;
-  margin-right: 40px;
-}
-.image {
-  border-radius: 25px;
-}
-=======
   .header-section {
     padding: 20px 22px;
     justify-content: space-between;
-    width: 82.5%;
   }
   .header-title {
     font-size: 16px;
@@ -60,7 +45,13 @@
   .image {
     border-radius: 25px;
   }
-  .header-list-items {
+
+  .header-title {
+    font-size: 16px;
+    color: #a0aec0;
+    margin-right: 40px;
   }
->>>>>>> header-section
+  .image {
+    border-radius: 25px;
+  }
 </style>

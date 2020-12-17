@@ -1,7 +1,7 @@
 <template>
-  <div class="table d-flex flex-column align-items-align-items-baseline">
-    <div class="table-header d-flex align-items-baseline">
-      <div class="d-flex align-items-baseline">
+  <div class="table">
+    <div class="table-header d-flex align-items-center">
+      <div class="d-flex align-items-center">
         <span class="order-catalogue">Order Catalogue</span>
         <Button
           width="67px"
@@ -12,7 +12,7 @@
         />
       </div>
 
-      <div class="d-flex align-items-baseline">
+      <div class="d-flex align-items-center">
         <TextBox
           placeholder="Select column"
           paddingLeft="15px"
@@ -29,12 +29,12 @@
     <table>
       <tbody>
         <tr class="table-top">
-          <th colspan="2">#</th>
-          <th>Product</th>
-          <th>Serial Code</th>
-          <th>Stock</th>
-          <th>Category</th>
-          <th colspan="2">Actions</th>
+          <th align="left">#</th>
+          <th align="left">Product</th>
+          <th align="left">Serial Code</th>
+          <th align="left">Stock</th>
+          <th align="left">Category</th>
+          <th align="left">Actions</th>
         </tr>
         <TableRow v-for="(row, index) in rows" :key="index" :row="row" />
       </tbody>
@@ -48,159 +48,160 @@
 </template>
 
 <script>
-import Button from "./Button.vue";
-import TextBox from "./TextBox.vue";
-import SearchIcon from "./SearchIcon.vue";
-import FilterIcon from "./FilterIcon.vue";
-import TableRow from "./TableRow.vue";
-import PageNumber from "./PageNumber.vue";
-import Select from "./Select.vue";
-import SortIcon from "./SortIcon.vue";
+  import Button from "./Button.vue";
+  import TextBox from "./TextBox.vue";
+  import SearchIcon from "./SearchIcon.vue";
+  import FilterIcon from "./FilterIcon.vue";
+  import TableRow from "./TableRow.vue";
+  import PageNumber from "./PageNumber.vue";
+  import Select from "./Select.vue";
+  import SortIcon from "./SortIcon.vue";
 
-export default {
-  data() {
-    return {
-      SearchIcon,
-      SortIcon,
-      rows: [
-        {
-          number: "03",
-          product: "Macbook pro 16",
-          serial: "#123-456ABC",
-          stock: "123",
-          category: "Apple",
-          actions: "Edit",
-          delete: "Delete"
-        },
-        {
-          number: "03",
-          product: "Macbook pro 16",
-          serial: "#123-456ABC",
-          stock: "123",
-          category: "Apple",
-          actions: "Edit",
-          delete: "Delete"
-        },
-        {
-          number: "03",
-          product: "Macbook pro 16",
-          serial: "#123-456ABC",
-          stock: "123",
-          category: "Apple",
-          actions: "Edit",
-          delete: "Delete"
-        },
-        {
-          number: "03",
-          product: "Macbook pro 16",
-          serial: "#123-456ABC",
-          stock: "123",
-          category: "Apple",
-          actions: "Edit",
-          delete: "Delete"
-        },
-        {
-          number: "03",
-          product: "Macbook pro 16",
-          serial: "#123-456ABC",
-          stock: "123",
-          category: "Apple",
-          actions: "Edit",
-          delete: "Delete"
-        },
-        {
-          number: "03",
-          product: "Macbook pro 16",
-          serial: "#123-456ABC",
-          stock: "123",
-          category: "Apple",
-          actions: "Edit",
-          delete: "Delete"
-        },
-        {
-          number: "03",
-          product: "Macbook pro 16",
-          serial: "#123-456ABC",
-          stock: "123",
-          category: "Apple",
-          actions: "Edit",
-          delete: "Delete"
-        },
-        {
-          number: "03",
-          product: "Macbook pro 16",
-          serial: "#123-456ABC",
-          stock: "123",
-          category: "Apple",
-          actions: "Edit",
-          delete: "Delete"
-        },
-        {
-          number: "03",
-          product: "Macbook pro 16",
-          serial: "#123-456ABC",
-          stock: "123",
-          category: "Apple",
-          actions: "Edit",
-          delete: "Delete"
-        },
-        {
-          number: "03",
-          product: "Macbook pro 16",
-          serial: "#123-456ABC",
-          stock: "123",
-          category: "Apple",
-          actions: "Edit",
-          delete: "Delete"
-        }
-      ]
-    };
-  },
-  components: {
-    Button,
-    TextBox,
-    FilterIcon,
-    TableRow,
-    PageNumber,
-    Select
-  }
-};
+  export default {
+    data() {
+      return {
+        SearchIcon,
+        SortIcon,
+        rows: [
+          {
+            number: "03",
+            product: "Macbook pro 16",
+            serial: "#123-456ABC",
+            stock: "123",
+            category: "Apple",
+            actions: "Edit",
+            delete: "Delete",
+          },
+          {
+            number: "03",
+            product: "Macbook pro 16",
+            serial: "#123-456ABC",
+            stock: "123",
+            category: "Apple",
+            actions: "Edit",
+            delete: "Delete",
+          },
+          {
+            number: "03",
+            product: "Macbook pro 16",
+            serial: "#123-456ABC",
+            stock: "123",
+            category: "Apple",
+            actions: "Edit",
+            delete: "Delete",
+          },
+          {
+            number: "03",
+            product: "Macbook pro 16",
+            serial: "#123-456ABC",
+            stock: "123",
+            category: "Apple",
+            actions: "Edit",
+            delete: "Delete",
+          },
+          {
+            number: "03",
+            product: "Macbook pro 16",
+            serial: "#123-456ABC",
+            stock: "123",
+            category: "Apple",
+            actions: "Edit",
+            delete: "Delete",
+          },
+          {
+            number: "03",
+            product: "Macbook pro 16",
+            serial: "#123-456ABC",
+            stock: "123",
+            category: "Apple",
+            actions: "Edit",
+            delete: "Delete",
+          },
+          {
+            number: "03",
+            product: "Macbook pro 16",
+            serial: "#123-456ABC",
+            stock: "123",
+            category: "Apple",
+            actions: "Edit",
+            delete: "Delete",
+          },
+          {
+            number: "03",
+            product: "Macbook pro 16",
+            serial: "#123-456ABC",
+            stock: "123",
+            category: "Apple",
+            actions: "Edit",
+            delete: "Delete",
+          },
+          {
+            number: "03",
+            product: "Macbook pro 16",
+            serial: "#123-456ABC",
+            stock: "123",
+            category: "Apple",
+            actions: "Edit",
+            delete: "Delete",
+          },
+          {
+            number: "03",
+            product: "Macbook pro 16",
+            serial: "#123-456ABC",
+            stock: "123",
+            category: "Apple",
+            actions: "Edit",
+            delete: "Delete",
+          },
+        ],
+      };
+    },
+    components: {
+      Button,
+      TextBox,
+      FilterIcon,
+      TableRow,
+      PageNumber,
+      Select,
+    },
+  };
 </script>
 
 <style lang="scss" scoped>
-.table {
-  background-color: #fff;
-  border-radius: 5px;
-  width: 100%;
-}
-
-.table-header {
-  padding: 23px 20px 21px 37px;
-  justify-content: space-between;
-}
-
-.order-catalogue {
-  font-size: 20px;
-  line-height: 23px;
-  color: #4a5568;
-  margin-right: 8px;
-}
-
-table {
-  border-collapse: collapse !important;
-}
-
-.table-top {
-  background-color: #edf2f7;
-  width: 100%;
-
-  th {
-    font-weight: normal;
-    padding: 11px 37px;
-    font-size: 16px;
-    line-height: 19px;
-    color: #4a5568;
-    border: none;
+  .table {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 100%;
   }
-}
+
+  .table-header {
+    padding: 23px 20px 21px 37px;
+    justify-content: space-between;
+  }
+
+  .order-catalogue {
+    font-size: 20px;
+    line-height: 23px;
+    color: #4a5568;
+    margin-right: 8px;
+  }
+
+  table {
+    border-collapse: collapse !important;
+    width: 100%;
+  }
+
+  .table-top {
+    background-color: #edf2f7;
+    width: 100%;
+
+    th {
+      font-weight: normal;
+      padding: 11px 37px;
+      font-size: 16px;
+      line-height: 19px;
+      color: #4a5568;
+      border: none;
+    }
+  }
 </style>
