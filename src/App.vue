@@ -14,28 +14,33 @@
 </template>
 
 <script>
-  import SideBar from "./components/SideBar.vue";
-  import Header from "./components/Header.vue";
-  import Table from "./components/Table.vue";
+import SideBar from "./components/SideBar.vue";
+import Header from "./components/Header.vue";
+import Table from "./components/Table.vue";
 
-  export default {
-    name: "App",
-    components: {
-      SideBar,
-      Header,
-      Table,
-    },
-  };
+export default {
+  name: "App",
+  components: {
+    SideBar,
+    Header,
+    Table
+  }
+};
 </script>
 
 <style lang="scss">
-  .table-section {
-    width: 83.5%;
-    margin-left: 17.5%;
-  }
-  .grey-background {
-    background-color: #eeecec;
-    padding: 20px;
+.table-section {
+  width: 83.5%;
+  margin-left: 17.5%;
+
+  @media (max-width: 480px) {
     width: 100%;
+    margin-left: unset;
   }
+}
+.grey-background {
+  background-color: #eeecec;
+  padding: 20px;
+  width: 100%;
+}
 </style>
