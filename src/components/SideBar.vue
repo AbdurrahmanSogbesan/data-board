@@ -26,7 +26,7 @@
 <style lang="scss" scoped>
   .sidebar-container {
     background: #cb808d;
-    position: relative;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
