@@ -27,6 +27,13 @@ export default {
   align-items: center;
   margin-left: 147px;
 
+  @media (max-width: 480px) {
+    left: 26%;
+    position: absolute;
+    margin-left: 0;
+    padding-bottom: 8px;
+  }
+
   span {
     font-size: 12px;
     color: #cbd5e0;

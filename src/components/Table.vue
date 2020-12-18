@@ -39,12 +39,10 @@
         <TableRow v-for="(row, index) in rows" :key="index" :row="row" />
       </tbody>
     </table>
-    <div
-      class="d-md-flex d-none align-items-baseline justify-content-between px-4"
-    >
-      <div></div>
+    <div class="d-md-flex align-items-baseline justify-content-between px-4">
+      <div class="d-md-flex d-none"></div>
       <PageNumber />
-      <Select />
+      <Select class="d-md-flex d-none" />
     </div>
   </div>
 </template>
