@@ -9,6 +9,7 @@
           backgroundColor="#4FD1C5"
           fontSize="11px"
           text="New Items"
+          class="mr-md-0 mr-2"
         />
       </div>
 
@@ -17,12 +18,16 @@
           placeholder="Select column"
           paddingLeft="15px"
           width="178px"
-          class="mr-5"
+          class="mr-md-5 mr-3"
           :icon="SortIcon"
           leftPosition="147px"
         />
-        <TextBox placeholder="Select list..." :icon="SearchIcon" class="mr-3" />
-        <FilterIcon class="mr-3" />
+        <TextBox
+          placeholder="Select list..."
+          :icon="SearchIcon"
+          class="mr-md-3 mr-2"
+        />
+        <FilterIcon class="mr-md-3 mr-2" />
         <Button width="91px" height="40px" fontSize="16px" text="Add new" />
       </div>
     </div>

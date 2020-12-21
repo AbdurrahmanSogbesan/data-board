@@ -28,7 +28,7 @@ export default {
   margin-left: 147px;
 
   @media (max-width: 480px) {
-    left: 26%;
+    left: 29%;
     position: absolute;
     margin-left: 0;
     padding-bottom: 8px;
